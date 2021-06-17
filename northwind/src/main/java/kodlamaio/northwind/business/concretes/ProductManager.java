@@ -50,8 +50,8 @@ public class ProductManager implements ProductService {
     }
 
     @Override
-    public DataResult<List<Product>> getByProductName(String productName) {
-        return new SuccessDataResult<List<Product>>(productDao.getByProductName(productName));
+    public DataResult<Product> getByProductName(String productName) {
+        return new SuccessDataResult<Product>(productDao.getByProductName(productName));
     }
 
     @Override

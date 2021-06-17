@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 
 public interface ProductDao extends JpaRepository<Product, Integer> {
-    List<Product> getByProductName(String productName);
+    Product getByProductName(String productName);
 
     List<Product> getByProductNameAndCategory_Id(String productName, int categoryId);
 
