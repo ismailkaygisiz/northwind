@@ -13,7 +13,7 @@ export default function ProductDetail() {
     productService
       .getProductByName(name)
       .then((result) => setProduct(result.data.data));
-  }, [name]);
+  }, []);
 
   return (
     <div>
